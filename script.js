@@ -5,11 +5,20 @@ function compute()
     var years = document.getElementById("years").value;
     var interest = principal * rate * years/100;
     years = 2021 + parseInt(years);
+    if (principal <= 0){
+        alert("Please enter a Pricipal amount");
+        document.getElementById("principal").focus();
+        return false;
+    }
     document.getElementById("result").innerHTML="If you deposit " + principal.toString();
     document.getElementById("result").innerHTML+="<br>at an interest rate of " + rate.toString();
     document.getElementById("result").innerHTML+="%.<br>You will receive an amount of " + interest.toString();
     document.getElementById("result").innerHTML+=",<br>in the year " + years.toString();
     
-    return interest;
+    return true;
 }
         
+function updateRate() {
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=rateval;
+}

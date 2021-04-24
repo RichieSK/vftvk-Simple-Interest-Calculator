@@ -1,38 +1,28 @@
-body {
-    background-color:black;
-}
-div {
+body {background-color:black;font-family:arial;color:white}
+
+h1{color:grey;font-family:verdana;white-space:nowrap}
+
+.maindiv {
     background-color:white;
-    width: 375px;
-    margin: 100px;
-    border-radius: 25px;
-    padding: 20px;
-    border: 50px white;
+    color:black;
+    width: 480px;
+    border-radius:25px;
+    padding:20px;
+    align:center
 }
 p {
-    margin:20px;
-}
-h1 {
-    color:grey;
+    display:table-row
 }
 form {
     margin-left:50px;
     display: table;
     width:330px;
 }
-p {
-    display: table-row;
-}
-label {       
-    display:table-cell;
-    width:120px;
-}
-button {
-    margin-left:50px
-}
-input {
-    display:table-cell;
-}
+
+label {display:table-cell;width:120px;}
+
+button {margin-left:50px} 
+
 p:nth-child(2) {
-    white-space:nowrap;
+    white-space:nowrap
 }
