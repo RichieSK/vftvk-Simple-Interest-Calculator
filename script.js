@@ -10,10 +10,7 @@ function compute()
         document.getElementById("principal").focus();
         return false;
     }
-    document.getElementById("result").innerHTML="If you deposit " + principal.toString();
-    document.getElementById("result").innerHTML+="<br>at an interest rate of " + rate.toString();
-    document.getElementById("result").innerHTML+="%.<br>You will receive an amount of " + interest.toString();
-    document.getElementById("result").innerHTML+=",<br>in the year " + years.toString();
+    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>You will receive an amount of <mark>"+interest+"</mark>,\<br\>in the year <mark>"+years+"</mark>\<br\>"
     
     return true;
 }
